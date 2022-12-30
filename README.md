@@ -25,7 +25,7 @@ development process four students would work together in a team.
   src="/register.jpg"
   alt="Picture of the register new user screen"
   title="Register new user"
-  style="display: inline-block; margin: 2px auto; max-width: 300px">
+  style="display: inline-block; margin: 6px auto; max-width: 300px">
 
 ## The original readme info
 
