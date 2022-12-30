@@ -14,6 +14,9 @@ was creating a webapp that is based on the Django framework. We chose therefore 
 salon which handles booking and controls hairdressing appointments. In order to learn the agile 
 development process four students would work together in a team.
 
+
+----
+
 <img
   src="/logged_in_menu.jpg"
   alt="Picture of the webpage when logged in"
@@ -21,11 +24,15 @@ development process four students would work together in a team.
   style="display: inline-block; margin: 2px auto; max-width: 300px">
 
 
+----
+
 <img
   src="/register.jpg"
   alt="Picture of the register new user screen"
   title="Register new user"
   style="display: inline-block; margin: 6px auto; max-width: 300px">
+  
+----
 
 ## The original readme info
 
