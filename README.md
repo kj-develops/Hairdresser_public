@@ -1,4 +1,4 @@
-# Hairdresser webpage for make believe hairdresser called Betakrøll
+# Hairdresser webpage for invented hairdresser called Betakrøll
 
 Group project with me and three others. Group assigment the whole semester. Using an agile approach. Project planning, collaboration, software design, demo, retrospectives. Test driven development. My main task was login/regitstration functionality (that also had to be customized mid project), a few tests and the design of the page.
 
