@@ -1,0 +1,25 @@
+<!--Author Kjærsti L. Bergli, email: klb022@uit.no - for most of the page--->
+<!-- The main pages content -->
+
+{% extends "base_generic.html" %}
+
+{% block content %}
+
+        {% load static %}<!-- Add images as static file -->
+        
+        <div class="container">
+                <img src="{% static 'images/dreamy-young-woman-sunglasses-looking-front_ed.jpg' %}" 
+                alt="Young girl with curly hair" width="100%">
+                <figcaption><a href='https://www.freepik.com/photos/woman-sunglasses' 
+                        class="reference">Woman sunglasses photo created by lookstudio - www.freepik.com</a></figcaption>
+                <h1 class="main_page_header_text">Betakrøll</h1>
+                <p class="header_text">Vi gir håret ditt en upgrade!</p>
+        
+                <div class="row">
+                        <p>Dette er en nettside for frisører og kunder! Vil du gi frisyren en skikkelig upgrade? 
+                        Ta en titt på oversikten over våre flotte frisører, registrer deg som bruker og book en time med din favorittfrisør! 
+                        Vi gleder oss til å se deg!</p>
+                </div>
+        </div>
+        
+{% endblock %}

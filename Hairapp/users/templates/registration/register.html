@@ -1,0 +1,24 @@
+<!-- Author Kjærsti L. Bergli, email: klb022@uit.no -->
+
+{% extends "base_generic.html" %}
+
+{% block content %}
+    
+<h1>Registrer deg hos Betakrøll</h1>
+
+<div class="form-group"><!-- Sjekk om denne passer med Boostrap!-->
+
+<!--Form to register a new user. Extends djangos forms-functionality and its implemented help texts to fill out the form correctly-->
+    <form method="post" action="{% url 'register' %}">
+        {% csrf_token %}
+        <div class="col-sm-10">
+        {{ form.as_p }}
+        </div>
+        <!-- class name 'warning' to get a yellow colour -->
+        <button type="submit" class="btn btn-warning">Registrer ny bruker</button>
+    </form>
+
+
+</div>
+
+{% endblock %}

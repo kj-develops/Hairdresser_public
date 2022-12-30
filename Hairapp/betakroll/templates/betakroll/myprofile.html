@@ -1,0 +1,54 @@
+<!--Author Kjærsti L. Bergli, email: klb022@uit.no--->
+
+<!--This page has mainly been used to check contents of database so far. Needs more styling and a view for hairdressers 
+    and a different view for customers. --->
+{% extends "base_generic.html" %}
+
+{% block content %}
+
+<div class="container">
+    <h1>Min profil hos Betakrøll frisør</h1>
+    <div class="ul">
+        <ul>
+            <li>
+                <p>Epost: {{user.email}}</p>
+            </li>
+            <li>
+                <p>Brukernavn: {{user.username}}</p>
+            </li>
+            <li>
+                <p>Passord: {{user.password}}</p>
+            </li>
+            <li>
+                <p>Navn: {{user.name}}</p>
+            </li>
+            <li>
+                <!--Ideally an if test to show the related title of the number of the role here.--->
+                <p>Rolle: {{user.role}} </p>
+            </li>
+            <li>
+                <p>Beskrivelse: {{user.about}}</p>
+            </li>
+            <li>
+                <p>Telefonnummer: {{user.phone}}</p>
+            </li>
+            <li>
+                <p>Er admin: {{user.is_admin}}</p>
+            </li>
+            <li>
+                <p>Er aktiv: {{user.is_active}}</p>
+            </li>
+            <li>
+                <p>Er staff: {{user.is_staff}}</p>
+            </li>
+            <li>
+                <p>Er superbruker: {{user.is_superuser}}</p>
+            </li>
+        </ul>
+    </div>
+
+</div>
+
+
+
+{% endblock %}

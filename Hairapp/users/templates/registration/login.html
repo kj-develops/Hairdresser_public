@@ -1,0 +1,43 @@
+<!-- Author Kjærsti L. Bergli, email: klb022@uit.no -->
+
+<!-- Form to log in a user. Extends djangos forms-functionality and its implemented help texts to fill out the form correctly.
+    Authentication when logged in also handled by Django. -->
+{% extends "base_generic.html" %}
+ 
+    {% block content %}
+    <h1>Logg inn</h1>
+
+    {% if form.errors %}
+    <p>Brukernavn og passord stemte ikke. Prøv igjen!</p>
+    {% endif %}
+
+    <!-- Edited to get a Noregian reply to exeptions -->
+    {% if next %}
+    {% if user.is_authenticated %}
+    <p>Din bruker har ikke tilgang til denne siden. Vennligst logg inn med en bruker som har tilgang.</p>
+    {% else %}
+    <p>Logg inn for å se innholdet på denne siden.</p>
+    {% endif %}
+    {% endif %}
+
+    <form method="post" action="{% url 'login' %}">
+        {% csrf_token %}
+        <table>
+            <tr>
+                <td>{{ form.username.label_tag }}</td>
+                <td>{{ form.username }}</td>
+            </tr>
+            <tr>
+                <td>{{ form.password.label_tag }}</td>
+                <td>{{ form.password }}</td>
+            </tr>
+        </table>
+         <!-- class name 'warning' to get a yellow colour -->
+        <button type="submit" class="btn btn-warning">Logg inn</button>
+        <input type="hidden" name="next" value="{{ next }}" />
+    </form>
+
+    <!-- Used with the built in loginfunctionality. Keeping the code for future work to implement with new custom user model. -->
+    <p><a href="{% url 'password_reset' %}" class="link">Glemt passordet?</a></p>
+
+    {% endblock %}

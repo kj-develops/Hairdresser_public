@@ -1,0 +1,56 @@
+/* CSS file for overall and spesific design. Wiew html files for details about what elements that are styled. 
+
+Colors: 'rgba(154,105,91,255)' (dark brown) and color 'rgba(250,188,104,255)' (yellow) are picked from front page image.
+
+*/
+
+.link {
+    font-family: 'Arapey', serif;
+    color: rgba(250,188,104,255);/*yellow*/
+}
+
+p{
+    font-family: 'Arapey', serif;
+    color: rgba(154,105,91,255);/*dark brown*/
+}
+
+a{
+    font-family: 'Arapey', serif;
+    color: rgba(154,105,91,255);/*dark brown*/
+}
+
+h1 {
+    font-family: 'Arapey', serif;
+    color: rgba(250,188,104,255);/*yellow*/
+    }
+
+/*Trying to fix problem with styling.*/
+.container h2 {
+    font-family: 'Arapey', serif;
+    color: rgb(202, 167, 120);
+    }
+
+.main_page_header_text{
+    font-size: 60px;
+}
+
+.header_text{
+    font-size: 30px;
+}
+
+.container {
+    position: relative;
+    text-align: left;
+    margin: 0;
+    }
+
+.row{
+    padding: 10px;  
+}
+
+/* Styling of references: tesxt explaining designers of pictures and logo*/
+.reference {
+    font-size: 8px;
+    color: rgb(202, 167, 120);
+} 
+

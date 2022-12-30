@@ -1,0 +1,9 @@
+<!-- Author Kjærsti L. Bergli, email: klb022@uit.no -->
+
+<!-- Used with the built in loginfunctionality. Keeping the file for future work to implement with new custom user model. -->
+{% extends "base_generic.html" %}
+
+{% block content %}
+  <p>Logged out!</p>
+  <a href="{% url 'login'%}">Click here to login again.</a>
+{% endblock %}
